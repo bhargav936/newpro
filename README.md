@@ -88,16 +88,12 @@ Under Function code you will find an inline editor with lambda_function.py. Dele
 
 import boto3
 import logging
-
 #setup simple logging for INFO
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
-
 #define the connection and set the region
-ec2 = boto3.resource('ec2', region_name='ap-southeast-1')
-
+ec2 = boto3.resource('ec2', region_name='ap-south-1')
 def lambda_handler(event, context):
-
     # all running EC2 instances.
     filters = [{
             'Name': 'tag:AutoStop',

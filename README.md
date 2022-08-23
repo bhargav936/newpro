@@ -22,6 +22,7 @@ Click Next:Permission
 Now you need to click to Create policy. It will pop up a new window. (Here we’ll create new custom ploicy for our Lambda function)
 
 Click on JSON tab. Remove default code and add paste below json.
+
 	{
     	"Version": "2012-10-17",
     	"Statement": [

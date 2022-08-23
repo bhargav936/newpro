@@ -14,8 +14,11 @@ Name = AutoStop ; Value = True (To stop the instances)
 First step is you need to create an IAM role for your Lambda function which will responsible for managing the EC2 instance's lifcycles like starting and stopping. To create an IAM role, you need to follow the steps below:
 
 1.Navigate to Services in AWS console and click onIAM
+
 2.Click on Roles in left side navigation panel
+
 3.Click on Create role
+
 4.Select Lambda from the list of AWS Service
 
 Click Next:Permission

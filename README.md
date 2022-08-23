@@ -86,15 +86,15 @@ Lambda Designer will open scroll down where you can find Function Code.
 
 Under Function code you will find an inline editor with lambda_function.py. Delete the content of the file and paste below code.
 
-import boto3
-import logging
-#setup simple logging for INFO
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-#define the connection and set the region
-ec2 = boto3.resource('ec2', region_name='ap-south-1')
-def lambda_handler(event, context):
-    # all running EC2 instances.
+	import boto3
+	import logging
+	#setup simple logging for INFO
+	logger = logging.getLogger()
+	logger.setLevel(logging.INFO)
+	#define the connection and set the region
+	ec2 = boto3.resource('ec2', region_name='ap-south-1')
+	def lambda_handler(event, context):
+    	# all running EC2 instances.
     filters = [{
             'Name': 'tag:AutoStop',
             'Values': ['True']
